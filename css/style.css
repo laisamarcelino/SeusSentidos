@@ -8,9 +8,14 @@
 }
 
 body {
-    background-image: url(../img/fundo.jpg);
-    background-size: cover;
+   
+    height: 100vh;
+
+    
+
 }
+
+
 
 header {
     display: flex;
@@ -18,22 +23,35 @@ header {
     justify-content: space-between;
     background-color: rgb(162, 103, 105);
     color: white;
+    height: 20vh;
 
 }
-h1.logo{
+
+h1.logo {
     font-family: 'Sacramento', cursive;
     font-size: 5rem;
     padding: 20px;
+    color: #582C4D;
 }
-a{
-    color:white !important;
+
+a {
+    color: white !important;
+}
+
+main{
+    height: 70vh;
+    background-image: url(../img/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
 }
 footer {
     width: 100vw;
     padding: 0 20px;
     position: fixed;
-    background-color:rgb(162, 103, 105);
+    background-color: rgb(162, 103, 105);
     color: white;
     bottom: 0;
     left: 0;
+    height: 10vh;
 }
