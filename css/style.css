@@ -8,10 +8,10 @@
 }
 
 body {
-   
+
     height: 100vh;
 
-    
+
 
 }
 
@@ -38,13 +38,14 @@ a {
     color: white !important;
 }
 
-main{
+main {
     height: 70vh;
     background-image: url(../img/fundo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.6;
 }
+
 footer {
     width: 100vw;
     padding: 0 20px;
