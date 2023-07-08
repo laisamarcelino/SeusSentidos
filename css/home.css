@@ -39,10 +39,12 @@ a {
 }
 
 main {
+    display: flex;
     height: 70vh;
-    /* background-image: url(../img/fundo.jpg); */
+    background-image: url(../img/home-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.6;
 }
 
