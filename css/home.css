@@ -49,6 +49,33 @@ main {
     align-items: center;
 }
 
+.quadro{
+    display: flex;
+    height: 380px;
+    width: 410px;
+    background-image: url(../img/folhas.jpeg);
+    border: 5px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrodentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+    border: 4px solid black;
+    width: 310px;
+    height: 280px;
+}
+
+.quadrodentro h1{
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.4);
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 36px;
+}
 
 footer {
     width: 100vw;
