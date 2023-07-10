@@ -71,6 +71,7 @@ main {
 }
 
 .quadrodentro h1{
+    font-family: 'EB Garamond', serif;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.4);
     margin-left: 5px;
     margin-right: 5px;
