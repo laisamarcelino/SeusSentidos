@@ -39,11 +39,43 @@ a {
 }
 
 main {
-    height: 70vh;
-    background-image: url(../img/fundo.jpg);
+    background-image: url(../img/home-background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    background-position: center;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro{
+    display: flex;
+    height: 380px;
+    width: 410px;
+    background-image: url(../img/folhas.jpeg);
+    border: 5px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrodentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+    border: 4px solid black;
+    width: 310px;
+    height: 280px;
+}
+
+.quadrodentro h1{
+    font-family: 'EB Garamond', serif;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.4);
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 36px;
 }
 
 footer {
