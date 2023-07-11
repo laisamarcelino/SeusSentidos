@@ -10,7 +10,14 @@ body {
     height: 100vh
 }
 
+p{
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+}
 
+h2{
+    font-family: 'Quicksand', sans-serif;
+}
 
 header {
     display: flex;
@@ -22,10 +29,7 @@ header {
 
 }
 
-img{
-    width: 868px;
-    height: 410px;
-}
+
 h1.logo {
     font-family: 'Sacramento', cursive;
     font-size: 3rem;
@@ -39,12 +43,61 @@ a {
 }
 
 .main-detalhes {
-    height: 70vh;
+    gap: 50px;
+    padding: 30px;
+    width: 100%;
     background-color: #ece2d0;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.sobre{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.sobre h2{
+    font-family: 'Sacramento', cursive;
+    font-size: 45px;
+}
+
+
+.jornada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+}
+
+.jornada h2{
+    margin-left: 30px;
+}
+.jornada p{
+    margin-left: 30px;
+}
+
+.inovacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left; 
 }
 
 footer {
@@ -57,7 +110,5 @@ footer {
     left: 0;
     height: 10vh;
 }
-.caixaCarrosel{
-    display: flex;
 
-}
+
