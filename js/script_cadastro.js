@@ -68,7 +68,6 @@ senha.addEventListener("keyup", function (event) {
 }
 )
 
-
 confirmaSenha.addEventListener("keyup", function (event) {
     const senha2Digitada = event.target.value
     trataSenha.estiloComparaSenhas(senha2Digitada, confirmaSenha, senha)
@@ -77,17 +76,14 @@ confirmaSenha.addEventListener("keyup", function (event) {
 valorBotao.addEventListener("click", function (evento) {
     evento.preventDefault()
     const campos = [senha.value, cep.value, confirmaSenha, estado.value, cidade.value, bairro.value, rua.value, email.value, numero.value, complemento.value, nome.value]
-    console.log(campos)
     const itensFiltrados = campos.filter((campo) => campo.length == 0)
-
-    console.log(itensFiltrados)
     if (senha.length < 8) {
         alert("A senha precisa ter pelo menos 8 caracteres.")
     } else if (senha.value != confirmaSenha.value) {
         alert("As senhas digitadas são diferentes, tente novamente.")
-    }else if(itensFiltrados.length > 0){
-    alert("Por favor, preencha todos os campos.")
-    }else {
+    } else if (itensFiltrados.length > 0) {
+        alert("Por favor, preencha todos os campos.")
+    } else {
         senha.value = ''
         confirmaSenha.value = ''
         cep.value = ''
@@ -100,9 +96,7 @@ valorBotao.addEventListener("click", function (evento) {
         complemento.value = ''
         nome.value = ''
         alert("Cadastro realizado com sucesso!")
-
     }
-
 })
 
 
