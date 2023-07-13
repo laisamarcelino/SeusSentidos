@@ -12,8 +12,7 @@ document.getElementById("recoveryForm").addEventListener("submit", function(even
   } else if (!emailPattern.test(email)) {
     alert("Por favor, insira um endereço de e-mail válido.");
   } else {
-    // Aqui você pode adicionar a lógica para enviar o e-mail de recuperação de senha
-
+    
     // Exibe a mensagem de sucesso
     document.getElementById("successMessage").classList.remove("hidden");
     document.getElementById("loginButton").classList.remove("hidden");
