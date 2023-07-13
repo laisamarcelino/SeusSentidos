@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------- header ----------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A26769;
+    color: rgb(255, 252, 252);
+    height: 20vh;
+
+}
+
+
+h1.logo {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    padding: 20px;
+    color: rgb(255, 252, 252);
+}
+
+a {
+    color: rgb(255, 252, 252) !important;
+    font-family: 'EB Garamond', serif;
+}
+
+
+/* ------------------------- body ----------------------------------- */
+
+body {
+    background-color: #ece2d0;
+}
+
+/* alinha as imagens lado a lado, em linha */
+#alinhamento_imagens{
+    margin: 80px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* alinha icones abaixo e ao centro da img */
+.alinhamento_icones{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+/* ----------------------------footer-------------------------------------- */
+footer {
+    width: 100vw;
+    padding: 0 20px;
+    position: fixed;
+    background-color: rgb(162, 103, 105);
+    color: rgb(255, 252, 252);
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+}
+/* ------------------------responsividade ------------------------------------ */
+
+/* ajusta para telas pequenas */
+@media screen and (max-width: 667px){
+    #alinhamento_imagens{
+        margin: 50px 10px;
+        flex-wrap: wrap;
+    }
+}
+
+/* ajusta o estilo para telas menores */
+@media screen and (max-width: 1024px) and (min-width: 668px){    
+    #alinhamento_imagens{
+        margin: 50px 10px;
+        flex-wrap: wrap;
+    }
+}
