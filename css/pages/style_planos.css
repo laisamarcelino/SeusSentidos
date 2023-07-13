@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------ Página Planos ------------------------------------------------ */
+
+#sessao_planos{
+    background-color: #B79492;
+    font-family: 'EB Garamond', serif;
+}
+
+#titulo_planos{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 50px;
+}
+
+h4{
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+li{
+    padding-bottom: 7px;
+}
+
+.plano{
+    border: 2px solid #917C78;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: #E7E8E6;
+    margin: 10px;
+}
+ 
+.alinhamento_imagem{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+#div_botao{
+    display: flex;
+    justify-content: center;
+}
+
+#espera{
+    background-color: #052A2B;
+    border: solid #052A2B;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 40px;
+    color: white;
+    font-size: medium;
+}
+
+#espera:hover{ 
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------------------------ */
