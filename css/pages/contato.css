@@ -5,13 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    height: 100vh
-}
-
-
-
+/* ------------------------- header ----------------------------*/
 header {
     display: flex;
     align-items: center;
@@ -35,17 +29,29 @@ a {
     font-family: 'EB Garamond', serif;
 }
 
-.main-contato {
-    height: 70vh;
+
+/* ------------------------- body ----------------------------------- */
+
+body {
     background-color: #ece2d0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    width: 100%;
-
-
 }
 
+/* alinha as imagens lado a lado, em linha */
+#alinhamento_imagens{
+    margin: 80px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* alinha icones abaixo e ao centro da img */
+.alinhamento_icones{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+/* ----------------------------footer-------------------------------------- */
 footer {
     width: 100vw;
     padding: 0 20px;
@@ -56,14 +62,20 @@ footer {
     left: 0;
     height: 10vh;
 }
+/* ------------------------responsividade ------------------------------------ */
 
-.caixaCarrosel {
-    display: flex;
-
+/* ajusta para telas pequenas */
+@media screen and (max-width: 667px){
+    #alinhamento_imagens{
+        margin: 50px 10px;
+        flex-wrap: wrap;
+    }
 }
 
-#imagem-estudante{
-    margin: auto;
-    padding: auto;
-    align-items: center;
+/* ajusta o estilo para telas menores */
+@media screen and (max-width: 1024px) and (min-width: 668px){    
+    #alinhamento_imagens{
+        margin: 50px 10px;
+        flex-wrap: wrap;
+    }
 }
