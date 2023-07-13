@@ -10,7 +10,13 @@ body {
     height: 100vh
 }
 
-p{
+.link_h1{
+    text-decoration: none;
+}
+
+/* --------------------------Pagina Sobre --------------------------------- */
+
+.paragrafo{
     font-family: 'EB Garamond', serif;
     font-size: 25px;
 }
@@ -112,3 +118,73 @@ footer {
 }
 
 
+ /* ------------------------------ Página Planos ------------------------------------------------ */
+
+/* aplica formação para a sessão plano. fonte padrão, background diferente */
+#sessao_planos{
+    background-color: #B79492;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+/* alinha titulo ao centro, aplica cor e formatação */
+#titulo_planos{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 50px;
+}
+
+/* alinha ao centro e aplica margem interna de 25px */
+h4{
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+/* aplica espaçamento abaixo para os topicos da lista */
+.lista_planos{
+    padding-bottom: 7px;
+}
+
+/* para as diferentes caixas de plano aplica borda arredondada, cor, espaçamento interno e externo */
+.plano{
+    border: 2px solid #917C78;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: #E7E8E6;
+    margin: 10px;
+}
+
+/* alinha a imagem dentro da caixa de plano */
+.alinhamento_imagem{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+/* alinha o botão ao centro da sessão */
+#div_botao{
+    display: flex;
+    justify-content: center;
+}
+
+/* aplica formatação ao botão de esperar na lista de espera */
+#espera{
+    background-color: #052A2B;
+    border: solid #052A2B;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 40px;
+    color: white;
+    font-size: medium;
+}
+
+/* aplica transição de zoom ao botão */
+#espera:hover{ 
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------------------------ */
