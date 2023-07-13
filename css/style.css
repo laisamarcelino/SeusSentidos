@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#A26769;
+    color: rgb(255, 252, 252);
+    height: 20vh;
+
+}
+
+img{
+    width: 868px;
+    height: 410px;
+}
+h1.logo {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    padding: 20px;
+    color: rgb(255, 252, 252);
+}
+
+a {
+    color: rgb(255, 252, 252) !important;
+    font-family: 'EB Garamond', serif;
+}
+
+.main-index {
+    height: 70vh;
+    background-color: #ece2d0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100vw;
+    padding: 0 20px;
+    position: fixed;
+    background-color: rgb(162, 103, 105);
+    color: rgb(255, 252, 252);
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+}
+.caixaCarrosel{
+    display: flex;
+
+}
