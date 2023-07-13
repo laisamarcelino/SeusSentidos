@@ -1,36 +1,56 @@
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      width: 300px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .container h2 {
-      text-align: center;
-    }
-    .container input[type="email"],
-    .container input[type="password"],
-    .container input[type="submit"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 3px;
-      border: 1px solid #ccc;
-    }
-    .container input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      cursor: pointer;
-    }
-    .container input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-    .container .forgot-password {
-      text-align: center;
-    }
-    .container .forgot-password a {
-      color: #4CAF50;
-    }
+/* css/style.css */
+body {
+   font-family: 'EB Garamond', serif;
+   background-color: #ECE2D0;
+   font-size: 20px;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"] {
+  width: 300px;
+  padding: 5px;
+}
+
+button[type="submit"] {
+  padding: 8px 16px;
+  background-color: #070135;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+main{
+  padding-top: 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  border-radius: 8px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 10px;
+  background-color: #A26769;
+  margin:20px;
+  box-shadow: 3px 3px 8px #00000080
+}
