@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detalhes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/pages/detalhes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- header padrão para todas as paginas -->
+    <header>
+        <a class="link_h1" href="../detalhes.html">
+            <h1 class="logo">Seus Sentidos</h1>
+        </a>
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#conheca">Conheça-nos</a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="main-detalhes">
+
+        <section class="sobre">
+            <div>
+                <h2 id="conheca">Seus Sentidos</h2>
+                <p class="paragrafo">
+                    é uma linha com produtos de higiene pessoal feita de forma artesanal com matéria prima natural e
+                    embalagem biodegradável para estar mais em sintonia com a natureza.
+                </p>
+            </div>
+            <div>
+                <img src="../img/produtos_detalhes.jpg" alt="imagem contendo produtos de higiene pessoal">
+            </div>
+        </section>
+
+        <section class="jornada">
+            <div>
+                <img src="../img/colhendo2.jpg" alt="imagem com um trabalhador colhendo folhas">
+            </div>
+            <div>
+                <h2>Conheça nossa jornada</h2>
+                <p class="paragrafo">
+                    Nosso propósito é inspirar o equilíbrio e a harmonia na vida das pessoas, cultivando relacionamentos
+                    saudáveis consigo mesmas, com os outros e com o meio ambiente.
+                </p>
+            </div>
+        </section>
+
+        <section class="inovacao">
+            <div>
+                <h2>Inovação em foco</h2>
+                <p class="paragrafo">
+                    Comprometidos em reduzir o impacto ambiental dos nossos produtos, estamos constantemente explorando
+                    maneiras de incorporar ingredientes vegetais e materiais reciclados em nossas formulações. Buscamos
+                    inovações que respeitem a natureza e contribuam para um futuro mais sustentável.
+                </p>
+            </div>
+            <div>
+                <img src="../img/inovacao3.jpg" alt="imagem contendo produtos de higiene pessoal">
+            </div>
+        </section>
+
+        <!-- ---------------------------------------------- Pagina planos -------------------------- -->
+        <!-- sessão que receberá uma formatação diferente -->
+        <section id="sessao_planos">
+            <h2 id="titulo_planos">NOSSOS PLANOS</h2>
+            <!-- alinhamento das divs da sessão utilizando bootstrap -->
+            <section id="planos" class="container">
+                <div class="row  justify-content-center">
+                    <!-- primeira div do plano 1 -->
+                    <div class="col plano">
+                        <h4>CUIDADOS ESSENCIAIS</h4>
+                        <ul>
+                            <li class="lista_planos">3 unidades de sabonetes de sua preferência;</li>
+                            <li class="lista_planos">1 kit shampoo e condicionador;</li>
+                            <li class="lista_planos">1 hidratante para o corpo.</li>
+                        </ul>
+                        <!-- div utilizada para alinhar a img ao paragrafo -->
+                        <div class="alinhamento_imagem">
+                            <img src="../img/produto-natural.png"
+                                alt="imagem de uma planta indicando um produto natural">
+                            <p>R$ 50,00</p>
+                        </div>
+                    </div>
+                    <!-- div do plano 2 -->
+                    <div class="col plano">
+                        <h4>BEM-ESTAR</h4>
+                        <ul>
+                            <li class="lista_planos">5 unidades de sabonetes de sua preferência;</li>
+                            <li class="lista_planos">1 kit shampoo e condicionador;</li>
+                            <li class="lista_planos">1 hidratante para o corpo;</li>
+                            <li class="lista_planos">1 kit sais de banho.</li>
+                        </ul>
+                        <div class="alinhamento_imagem">
+                            <img src="../img/produto-natural.png"
+                                alt="imagem de uma planta indicando um produto natural">
+                            <p>R$ 80,00</p>
+                        </div>
+                    </div>
+                    <!-- div do plano 3 -->
+                    <div class="col plano">
+                        <h4>RELAXAMENTO</h4>
+                        <ul>
+                            <li class="lista_planos">5 unidades de sabonetes de sua preferência;</li>
+                            <li class="lista_planos">1 kit shampoo e condicionador;</li>
+                            <li class="lista_planos">1 hidratante para o corpo;</li>
+                            <li class="lista_planos">1 kit sais de banho;</li>
+                            <li class="lista_planos">1 kit aromatizantes;</li>
+                            <li class="lista_planos">1 sessão online de yoga por mês.</li>
+                        </ul>
+                        <div class="alinhamento_imagem">
+                            <img src="../img/produto-natural.png"
+                                alt="imagem de uma planta indicando um produto natural">
+                            <p>R$ 150,00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="div_botao">
+                <button id="espera"> <a href="../pages/cadastro.html">Entrar na lista de espera</a></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- ------------------------------------footer------------------------------------------------ -->
+
+    <!-- footer padrão para todas as páginas -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top ">
+        <div class="col-md-7 d-flex align-items-center">
+            <span>&copy;Produtos Artesanais de cuidados pessoais</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="#"><i class="bi bi-github"></i>
+                </a></li>
+            <li class="ms-3"><a href="#"><i class="bi bi-instagram"></i>
+                </a></li>
+            <li class="ms-3"><a href="#"><i class="bi bi-twitter"></i>
+                </a></li>
+        </ul>
+    </footer>
+
+
+    <!-- script que veio do bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
