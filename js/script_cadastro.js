@@ -47,16 +47,7 @@ const trataSenha = {
         else {
             confirmaSenha.style.backgroundColor = 'white'
         }
-    },
-    validaEnvio: function (senha, confirmaSenha) {
-        if (senha.value === confirmaSenha.value) {
-            return alert('cadastro realizado')
-        }
-        else {
-            return alert('tente novamente')
-        }
     }
-
 
 }
 
