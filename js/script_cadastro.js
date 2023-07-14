@@ -10,7 +10,7 @@ const bairro = document.getElementById('inputBairro')
 const rua = document.getElementById('inputRua')
 const numero = document.getElementById('inputNum')
 const complemento = document.getElementById('inputComplemento')
-//const formInputs = document.querySelectorAll('.form-control')
+const rg = document.querySelectorAll('inputRG')
 const valorBotao = document.getElementById('envioFormulario')
 const nome = document.getElementById('inputNome')
 let valorSenha1 = 0
@@ -31,10 +31,10 @@ const trataCEP = {
 const trataSenha = {
     estiloMinCaracteres: function (senhaDigitada, senha) {
         for (let i = 1; i < senhaDigitada.length; i++) {
-            senha.style.backgroundColor = "red"
+            senha.style.border = 'solid 2px red'
             if (senhaDigitada.length === 8) {
                 senha.blur()
-                senha.style.backgroundColor = "white"
+                senha.style.border = "none"
                 valorSenha1 = senha.value
             }
         }
@@ -42,10 +42,10 @@ const trataSenha = {
 
     estiloComparaSenhas: function (senha2Digitada, confirmaSenha, senha) {
         if (senha2Digitada != senha.value) {
-            confirmaSenha.style.backgroundColor = 'red'
+            confirmaSenha.style.border = 'solid 2px red'
         }
         else {
-            confirmaSenha.style.backgroundColor = 'white'
+            confirmaSenha.style.border = 'none'
         }
     }
 
@@ -78,6 +78,7 @@ valorBotao.addEventListener("click", function (evento) {
         senha.value = ''
         confirmaSenha.value = ''
         cep.value = ''
+        rg.value = ''
         estado.value = ''
         cidade.value = ''
         bairro.value = ''
@@ -108,20 +109,24 @@ cep.addEventListener("keyup", function (event) {
 
 const buscaEndereco = async (cepValor) => {
 
-    const urlAPI = `https://viacep.com.br/ws/${cepValor}/json` //template string uma vez que a API buscará o valor do cep armazenado em uma variável
-    const resposta = await fetch(urlAPI) // o fetch envia uma requisição GET para a URL especificada. O await foi utilizado uma vez que trata-se de uma função assincrona, ele aguarda a conclusão de uma promesa antes de prosseguir a execução do código. 
-    const dados = await resposta.json() //recebe os dados do endereço
-    console.log(dados)
+    try {
+        const urlAPI = `https://viacep.com.br/ws/${cepValor}/json` //template string uma vez que a API buscará o valor do cep armazenado em uma variável
+        const resposta = await fetch(urlAPI) // o fetch envia uma requisição GET para a URL especificada. O await foi utilizado uma vez que trata-se de uma função assincrona, ele aguarda a conclusão de uma promesa antes de prosseguir a execução do código. 
+        const dados = await resposta.json() //recebe os dados do endereço
 
-    //---------- falta tratar o erro para caso cep não exista
-    if (dados && dados.erro) {
-        alert("Cep inválido, digite novamente.")
-        cep.value = ''
-    } else {
+        if (dados && dados.erro) {
+            throw new Error("Cep inválido, digite novamente.")
+        }
         estado.value = dados.uf
         cidade.value = dados.localidade
         bairro.value = dados.bairro
         rua.value = dados.logradouro
+
+    }
+
+    catch (error) {
+        cep.value = ''
+        alert(error.message)
     }
 }
 
